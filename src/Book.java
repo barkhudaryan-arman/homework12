@@ -1,22 +1,27 @@
 public class Book {
     private String name;
-    private String author;
-    private int age;
-    public Book(String name, String author, int age) {
+    private Author Author;
+    private int year;
+
+    public Book(String name, Author Author, int year) {
         this.name = name;
-        this.author = author;
-        this.age = age;
+        this.Author = Author;
+        this.year = year;
     }
-    public String getName(){
+
+    public String getName() {
         return this.name;
     }
-    public String getAuthor(){
-        return this.author;
+
+    public Author getAuthor() {
+        return this.Author;
     }
-    public int getAge(){
-        return this.age;
+
+    public int getYear() {
+        return this.year;
     }
-    public void setAge(int age){
-        this.age = age;
+
+    public void setYear(int age) {
+        this.year = age;
     }
 }

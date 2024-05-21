@@ -7,10 +7,10 @@ public class Main {
         System.out.println("Имя автора " + author1.getName());
         System.out.println("Фамилия автора " + author1.getLastName());
         Book book = new Book("Captain's daughter", "Alexander Pushkin", 1836);
-        System.out.println("Название книги " + book.getName() + " автор " + book.getAuthor() + " год выпуска: " + book.getAge());
-        Book book1 = new Book("War and Peace","Lev Tolstoy",1867 );
-        System.out.println("Название книги " + book1.getName() + " автор " + book1.getAuthor() + " год выпуска: " + book1.getAge());
-        book.setAge(2024);
-        System.out.println("Название книги " + book.getName() + " автор " + book.getAuthor() + " год выпуска: " + book.getAge());
+        System.out.println("Название книги " + book.getName() + " автор " + book.getAuthor() + " год выпуска: " + book.getYear());
+        Book book1 = new Book("War and Peace", "Lev Tolstoy", 1867);
+        System.out.println("Название книги " + book1.getName() + " автор " + book1.getAuthor() + " год выпуска: " + book1.getYear());
+        book.setYear(2024);
+        System.out.println("Название книги " + book.getName() + " автор " + book.getAuthor() + " год выпуска: " + book.getYear());
     }
 }
