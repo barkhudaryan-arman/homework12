@@ -6,9 +6,9 @@ public class Main {
         Author author1 = new Author("Lev", "Tolstoy");
         System.out.println("Имя автора " + author1.getName());
         System.out.println("Фамилия автора " + author1.getLastName());
-        Book book = new Book("Captain's daughter", "Alexander Pushkin", 1836);
+        Book book = new Book("Captain's daughter",author, 1836);
         System.out.println("Название книги " + book.getName() + " автор " + book.getAuthor() + " год выпуска: " + book.getYear());
-        Book book1 = new Book("War and Peace", "Lev Tolstoy", 1867);
+        Book book1 = new Book("War and Peace",author1, 1867);
         System.out.println("Название книги " + book1.getName() + " автор " + book1.getAuthor() + " год выпуска: " + book1.getYear());
         book.setYear(2024);
         System.out.println("Название книги " + book.getName() + " автор " + book.getAuthor() + " год выпуска: " + book.getYear());
